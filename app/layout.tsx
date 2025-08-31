@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pixence - Transform Your Visual Content",
+  title: "PixSence - Transform Your Visual Content",
   description: "Upload, compress, and optimize your videos and images for any platform. Create stunning social media content with powerful AI-driven tools.",
 };
 
