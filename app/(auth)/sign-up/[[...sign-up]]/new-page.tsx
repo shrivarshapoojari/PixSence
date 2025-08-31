@@ -165,7 +165,7 @@ export default function Page() {
 
       {/* Footer */}
       <footer className="text-center py-6 text-gray-500 dark:text-gray-400 text-sm">
-        <p>&copy; 2025 Pixence. All rights reserved.</p>
+        <p>&copy; 2025 PixSence. All rights reserved.</p>
       </footer>
     </div>
   );

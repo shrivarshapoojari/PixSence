@@ -12,7 +12,7 @@ export default function Home() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <PixenceLogo className="w-8 h-8" />
-            <span className="text-2xl font-bold text-gray-800 dark:text-white">Pixence</span>
+            <span className="text-2xl font-bold text-gray-800 dark:text-white">PixSence</span>
           </div>
           <div className="flex items-center space-x-4">
             <Link href="/sign-in" className="btn btn-ghost">Sign In</Link>
@@ -165,7 +165,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300">
-                "Pixence has revolutionized my workflow. What used to take hours now takes minutes. 
+                "PixSence has revolutionized my workflow. What used to take hours now takes minutes. 
                 The video compression is incredible!"
               </p>
             </div>
@@ -201,7 +201,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600 dark:text-gray-300">
-                "Fast, reliable, and the quality is outstanding. Pixence is now essential 
+                "Fast, reliable, and the quality is outstanding. PixSence is now essential 
                 to my production pipeline."
               </p>
             </div>
@@ -216,7 +216,7 @@ export default function Home() {
             How It Works
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Get started with Pixence in just three simple steps
+            Get started with PixSence in just three simple steps
           </p>
         </div>
 
@@ -267,7 +267,7 @@ export default function Home() {
             Ready to Transform Your Content?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of creators who trust Pixence for their video and image optimization needs.
+            Join thousands of creators who trust PixSence for their video and image optimization needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/sign-up" className="btn btn-lg bg-white text-blue-600 hover:bg-gray-100 border-none">
@@ -288,7 +288,7 @@ export default function Home() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <PixenceLogo className="w-8 h-8" />
-                <span className="text-xl font-bold">Pixence</span>
+                <span className="text-xl font-bold">PixSence</span>
               </div>
               <p className="text-gray-400">
                 The ultimate platform for video compression and social media content creation.
@@ -320,7 +320,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Pixence. All rights reserved.</p>
+            <p>&copy; 2025 PixSence. All rights reserved.</p>
           </div>
         </div>
       </footer>

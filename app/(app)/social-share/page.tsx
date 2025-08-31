@@ -89,7 +89,7 @@ const socialFormats = {
                 <nav className="flex items-center justify-between bg-gray-800/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-lg border border-gray-700/50">
                     <Link href="/" className="flex items-center space-x-2 group">
                         <PixenceLogo className="w-8 h-8 transition-transform group-hover:scale-110" />
-                        <span className="text-2xl font-bold text-white">Pixence</span>
+                        <span className="text-2xl font-bold text-white">PixSence</span>
                     </Link>
                     <div className="flex items-center space-x-6">
                         <Link href="/" className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 font-medium transition-colors">

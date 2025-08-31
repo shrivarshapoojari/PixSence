@@ -26,7 +26,7 @@ export default function AuthLayout({
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2 group">
             <PixenceLogo className="w-8 h-8 transition-transform group-hover:scale-110" />
-            <span className="text-2xl font-bold text-gray-800 dark:text-white">Pixence</span>
+            <span className="text-2xl font-bold text-gray-800 dark:text-white">PixSence</span>
           </Link>
           <div className="flex items-center space-x-4">
             <span className="text-gray-600 dark:text-gray-300">{alternativeText}</span>
@@ -80,7 +80,7 @@ export default function AuthLayout({
 
       {/* Footer */}
       <footer className="text-center py-6 text-gray-500 dark:text-gray-400 text-sm">
-        <p>&copy; 2025 Pixence. All rights reserved.</p>
+        <p>&copy; 2025 PixSence. All rights reserved.</p>
       </footer>
     </div>
   );
