@@ -19,7 +19,7 @@ export default function Page() {
         
         <div className="w-full max-w-md relative z-10">
           {/* Welcome Section */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
             <div className="mb-4">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Play className="w-8 h-8 text-white" />
@@ -28,7 +28,7 @@ export default function Page() {
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
               Welcome Back
             </h1>
-            <p className="text-gray-700 font-medium">
+            <p className="text-gray-800 font-semibold">
               Sign in to continue transforming your visual content
             </p>
           </div>
@@ -66,11 +66,11 @@ export default function Page() {
           </div>
 
           {/* Feature Highlights */}
-          <div className="mt-8 text-center">
-            <p className="text-sm text-gray-700 font-medium mb-4">
+          <div className="mt-8 text-center bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
+            <p className="text-sm text-gray-800 font-semibold mb-4">
               Access your creative toolkit:
             </p>
-            <div className="flex justify-center space-x-6 text-sm text-gray-800 font-medium">
+            <div className="flex justify-center space-x-6 text-sm text-gray-900 font-semibold">
               <div className="flex items-center">
                 <Play className="w-4 h-4 text-blue-500 mr-2" />
                 Video Tools

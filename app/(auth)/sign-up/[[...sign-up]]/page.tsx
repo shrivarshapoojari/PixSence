@@ -24,15 +24,16 @@ export default function Page() {
             
             {/* Left Side - Benefits */}
             <div className="hidden lg:block">
-              <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                Join the Future of
-                <span className="gradient-text block"> Content Creation</span>
-              </h1>
-              <p className="text-lg text-gray-700 mb-8 font-medium">
-                Transform your creative workflow with powerful video compression and social media tools.
-              </p>
-              
-              <div className="space-y-4">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/30">
+                <h1 className="text-4xl font-bold text-gray-900 mb-6">
+                  Join the Future of
+                  <span className="gradient-text block"> Content Creation</span>
+                </h1>
+                <p className="text-lg text-gray-800 mb-8 font-semibold">
+                  Transform your creative workflow with powerful video compression and social media tools.
+                </p>
+                
+                <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                     <Check className="w-4 h-4 text-white" />
@@ -59,50 +60,45 @@ export default function Page() {
                 </div>
               </div>
 
-              {/* Social Proof */}
-              <div className="grid grid-cols-3 gap-4 text-center mb-8">
-                <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
-                  <Users className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">10K+</div>
-                  <div className="text-sm text-gray-700 font-medium">Active Users</div>
+                {/* Social Proof */}
+                <div className="grid grid-cols-3 gap-4 text-center mb-8 mt-8">
+                  <div className="p-4 bg-white/70 rounded-lg shadow-sm">
+                    <Users className="w-6 h-6 text-blue-600 mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-gray-900">10K+</div>
+                    <div className="text-sm text-gray-700 font-medium">Active Users</div>
+                  </div>
+                  <div className="p-4 bg-white/70 rounded-lg shadow-sm">
+                    <Zap className="w-6 h-6 text-purple-600 mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-gray-900">1M+</div>
+                    <div className="text-sm text-gray-700 font-medium">Files Processed</div>
+                  </div>
+                  <div className="p-4 bg-white/70 rounded-lg shadow-sm">
+                    <Star className="w-6 h-6 text-yellow-500 mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-gray-900">4.9</div>
+                    <div className="text-sm text-gray-700 font-medium">Rating</div>
+                  </div>
                 </div>
-                <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
-                  <Zap className="w-6 h-6 text-purple-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">1M+</div>
-                  <div className="text-sm text-gray-700 font-medium">Files Processed</div>
-                </div>
-                <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
-                  <Star className="w-6 h-6 text-yellow-500 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">4.9</div>
-                  <div className="text-sm text-gray-700 font-medium">Rating</div>
-                </div>
-              </div>
 
-              {/* Limited Time Offer */}
-              <div className="p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-200 dark:border-blue-800 rounded-lg mb-8">
-                <div className="flex items-center mb-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                  <span className="text-sm font-semibold text-blue-800 dark:text-blue-200">🎉 LIMITED TIME</span>
+                {/* Limited Time Offer */}
+                <div className="p-6 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-2 border-blue-300 rounded-lg">
+                  <div className="flex items-center mb-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                    <span className="text-sm font-semibold text-blue-800">🎉 LIMITED TIME</span>
+                  </div>
+                  <p className="text-sm text-blue-900 font-medium">
+                    <strong>Get started free</strong> - no credit card required! Premium features included for 30 days.
+                  </p>
                 </div>
-                <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>Get started free</strong> - no credit card required! Premium features included for 30 days.
-                </p>
-              </div>
-
-              <div className="mt-8 p-4 bg-blue-50 dark:bg-gray-700 rounded-lg">
-                <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>🎉 Limited Time:</strong> Get started free - no credit card required!
-                </p>
               </div>
             </div>
 
             {/* Right Side - Sign Up Form */}
             <div className="w-full max-w-md mx-auto lg:mx-0">
-              <div className="text-center mb-8 lg:hidden">
+              <div className="text-center mb-8 lg:hidden bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/30">
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">
                   Get Started
                 </h1>
-                <p className="text-gray-700 font-medium">
+                <p className="text-gray-800 font-semibold">
                   Create your account to start transforming content
                 </p>
               </div>

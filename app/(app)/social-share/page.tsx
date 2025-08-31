@@ -2,6 +2,11 @@
 
 import React, {useState, useEffect, useRef} from 'react'
 import { CldImage } from 'next-cloudinary';
+import Link from 'next/link';
+import { UserButton } from '@clerk/nextjs';
+import { Home as HomeIcon, Video, Upload, Download, Images, CheckCircle, AlertCircle } from 'lucide-react';
+import PixenceLogo from '../../../components/PixenceLogo';
+import AnimatedBackground from '../../../components/AnimatedBackground';
 
 const socialFormats = {
     "Instagram Square (1:1)": { width: 1080, height: 1080, aspectRatio: "1:1" },
