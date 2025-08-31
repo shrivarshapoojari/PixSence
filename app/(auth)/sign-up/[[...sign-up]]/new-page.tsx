@@ -64,12 +64,12 @@ export default function Page() {
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg backdrop-blur-sm card-hover">
                   <Users className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-800 dark:text-white">10K+</div>
+                  <div className="text-2xl font-bold text-gray-800 dark:text-white">10+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Active Users</div>
                 </div>
                 <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg backdrop-blur-sm card-hover">
                   <Zap className="w-6 h-6 text-purple-600 mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-800 dark:text-white">1M+</div>
+                  <div className="text-2xl font-bold text-gray-800 dark:text-white">1+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-300">Files Processed</div>
                 </div>
                 <div className="p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg backdrop-blur-sm card-hover">

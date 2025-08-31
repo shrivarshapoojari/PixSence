@@ -1,7 +1,6 @@
 import { SignIn } from "@clerk/nextjs";
 import AuthHeader from "@/components/AuthHeader";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import TrustIndicators from "@/components/TrustIndicators";
 import { Play, Upload, Image as ImageIcon } from "lucide-react";
 
 export default function Page() {
