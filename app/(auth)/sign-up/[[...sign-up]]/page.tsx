@@ -64,12 +64,12 @@ export default function Page() {
                 <div className="grid grid-cols-3 gap-4 text-center mb-8 mt-8">
                   <div className="p-4 bg-white/70 rounded-lg shadow-sm">
                     <Users className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-gray-900">10+</div>
+                    <div className="text-2xl font-bold text-gray-900">10K+</div>
                     <div className="text-sm text-gray-700 font-medium">Active Users</div>
                   </div>
                   <div className="p-4 bg-white/70 rounded-lg shadow-sm">
                     <Zap className="w-6 h-6 text-purple-600 mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-gray-900">1+</div>
+                    <div className="text-2xl font-bold text-gray-900">1M+</div>
                     <div className="text-sm text-gray-700 font-medium">Files Processed</div>
                   </div>
                   <div className="p-4 bg-white/70 rounded-lg shadow-sm">
@@ -132,7 +132,7 @@ export default function Page() {
 
               {/* Trust Indicators */}
               <div className="mt-6 text-center">
-                {/* <div className="flex justify-center items-center space-x-4 text-xs text-gray-700 font-medium"> */}
+                {/* <div className="flex justify-center items-center space-x-4 text-xs text-gray-700 font-medium">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
                     256-bit SSL
@@ -145,12 +145,16 @@ export default function Page() {
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
                     SOC 2 Type II
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
+
+
 
       {/* Footer */}
       <footer className="text-center py-6 text-gray-600 font-medium text-sm">
