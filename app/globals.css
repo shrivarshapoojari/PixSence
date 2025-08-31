@@ -20,9 +20,9 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground));
+  background: linear-gradient(to bottom right, #ffffff 0%, #f9fafb 50%, #f3f4f6 100%);
+  min-height: 100vh;
 }
 
 /* Custom animations for landing page */
@@ -82,4 +82,193 @@ body {
   50% {
     opacity: 0.8;
   }
+}
+
+/* Clerk form customizations */
+.cl-internal-b3fm6y {
+  background: transparent !important;
+}
+
+.cl-card {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.cl-headerTitle {
+  color: inherit !important;
+}
+
+.cl-headerSubtitle {
+  color: inherit !important;
+}
+
+.cl-socialButtonsBlockButton {
+  transition: all 0.2s ease !important;
+  border: 2px solid #E5E7EB !important;
+  background: white !important;
+  color: #374151 !important;
+}
+
+.cl-socialButtonsBlockButton:hover {
+  transform: translateY(-1px) !important;
+  border-color: #3B82F6 !important;
+  background: #F3F4F6 !important;
+}
+
+.cl-formButtonPrimary {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6) !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.cl-formButtonPrimary:hover {
+  background: linear-gradient(135deg, #2563EB, #7C3AED) !important;
+  transform: translateY(-1px) !important;
+}
+
+.cl-formFieldInput {
+  background: white !important;
+  border: 2px solid #E5E7EB !important;
+  color: #374151 !important;
+  font-weight: 500 !important;
+}
+
+.cl-formFieldInput:focus {
+  border-color: #3B82F6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+.cl-formFieldLabel {
+  color: #374151 !important;
+  font-weight: 600 !important;
+}
+
+.cl-footerActionLink {
+  color: #3B82F6 !important;
+  font-weight: 600 !important;
+}
+
+.cl-footerActionLink:hover {
+  color: #2563EB !important;
+}
+
+.cl-dividerLine {
+  background: #E5E7EB !important;
+}
+
+.cl-dividerText {
+  color: #6B7280 !important;
+  font-weight: 500 !important;
+}
+
+.cl-socialButtonsBlockButtonText {
+  color: #374151 !important;
+  font-weight: 600 !important;
+}
+
+.cl-formFieldInputShowPasswordButton {
+  color: #6B7280 !important;
+}
+
+.cl-formFieldInputShowPasswordButton:hover {
+  color: #374151 !important;
+}
+
+/* Additional text improvements */
+.cl-formField {
+  margin-bottom: 1rem !important;
+}
+
+.cl-formFieldAction {
+  margin-top: 0.5rem !important;
+}
+
+.cl-formFieldAction a {
+  color: #3B82F6 !important;
+  font-weight: 600 !important;
+}
+
+/* Fix faded text issues */
+.cl-headerTitle {
+  color: #111827 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+.cl-headerSubtitle {
+  color: #4B5563 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.cl-socialButtonsBlockButtonText {
+  color: #374151 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+.cl-formFieldLabel {
+  color: #111827 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+.cl-footerActionText {
+  color: #4B5563 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.cl-alternativeMethodsBlockButtonText {
+  color: #374151 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+/* Overall component text improvements */
+.cl-componentContainer * {
+  opacity: 1 !important;
+}
+
+.cl-main {
+  color: #111827 !important;
+}
+
+.cl-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Additional Clerk element improvements */
+.cl-formFieldInput::placeholder {
+  color: #9CA3AF !important;
+  opacity: 1 !important;
+}
+
+.cl-formFieldInputShowPasswordIcon {
+  color: #6B7280 !important;
+}
+
+.cl-formFieldHintText {
+  color: #6B7280 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.cl-formFieldErrorText {
+  color: #DC2626 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.cl-identityPreview {
+  color: #111827 !important;
+}
+
+.cl-profileSectionPrimaryButton {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6) !important;
+  color: white !important;
 }
