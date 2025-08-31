@@ -52,37 +52,219 @@ PixSence is a modern web application that revolutionizes how you manage, compres
 - **PostCSS** - CSS processing
 - **Turbopack** - Ultra-fast bundler
 
-## Getting Started
+## 📦 Installation
 
-First, run the development server:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shrivarshapoojari/Pixence.git
+   cd pixence
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Configure the following variables in `.env`:
+   ```env
+   # Database
+   DATABASE_URL="your_postgresql_database_url"
+   
+   # Clerk Authentication
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
+   CLERK_SECRET_KEY="your_clerk_secret_key"
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
+   
+   # Cloudinary
+   CLOUDINARY_CLOUD_NAME="your_cloudinary_cloud_name"
+   CLOUDINARY_API_KEY="your_cloudinary_api_key"
+   CLOUDINARY_API_SECRET="your_cloudinary_api_secret"
+   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloudinary_cloud_name"
+   ```
+
+4. **Set up the database**
+   ```bash
+   npx prisma migrate dev
+   npx prisma generate
+   ```
+
+5. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Project Structure
+
+```
+pixence/
+├── app/                          # Next.js App Router
+│   ├── (app)/                   # Authenticated app routes
+│   │   ├── home/               # Video gallery
+│   │   ├── video-upload/       # Video upload interface
+│   │   └── social-share/       # Social media image creator
+│   ├── (auth)/                 # Authentication routes
+│   │   ├── sign-in/           # Sign in page
+│   │   └── sign-up/           # Sign up page
+│   ├── api/                    # API routes
+│   │   ├── video/             # Video processing endpoints
+│   │   └── image-upload/      # Image upload endpoints
+│   ├── generated/              # Generated Prisma client
+│   ├── globals.css            # Global styles
+│   ├── layout.tsx             # Root layout
+│   └── page.tsx              # Landing page
+├── components/                 # Reusable components
+│   ├── AnimatedBackground.tsx # Background animations
+│   ├── AuthHeader.tsx        # Authentication header
+│   ├── PixenceLogo.tsx       # Brand logo component
+│   ├── TrustIndicators.tsx   # Trust badges
+│   └── VideoCard.tsx         # Video display component
+├── prisma/                    # Database schema and migrations
+│   ├── schema.prisma         # Database schema
+│   └── migrations/           # Database migrations
+└── public/                   # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Color Palette**
+- **Primary**: Blue to Purple gradients (`from-blue-500 to-purple-600`)
+- **Background**: Dark theme (`from-gray-900 to-gray-800`)
+- **Cards**: Glassmorphism (`bg-gray-800/85 backdrop-blur-sm`)
+- **Text**: High contrast (`text-white`, `text-gray-300`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Key Design Elements**
+- **Glassmorphism**: Translucent cards with backdrop blur
+- **Gradient Backgrounds**: Smooth color transitions
+- **Hover Effects**: Interactive animations and state changes
+- **Responsive Design**: Mobile-first approach with Tailwind breakpoints
 
-## Learn More
+## 🚀 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### **Vercel (Recommended)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Connect to Vercel**
+   - Push your code to GitHub
+   - Connect your repository to Vercel
+   - Configure environment variables in Vercel dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Build Configuration**
+   The project is already configured for Vercel deployment:
+   ```json
+   {
+     "scripts": {
+       "build": "prisma generate && next build --turbopack",
+       "postinstall": "prisma generate"
+     }
+   }
+   ```
 
-## Deploy on Vercel
+3. **Environment Variables**
+   Add all variables from your `.env` file to Vercel's environment settings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **Database Setup**
+- Use Vercel Postgres, Railway, or any PostgreSQL provider
+- Run migrations after deployment: `npx prisma migrate deploy`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Development
+
+### **Available Scripts**
+```bash
+npm run dev      # Start development server with Turbopack
+npm run build    # Build for production (includes Prisma generation)
+npm run start    # Start production server
+npm run lint     # Run ESLint (currently disabled)
+```
+
+### **Key Development Notes**
+- **Prisma Client**: Auto-generated in `app/generated/prisma/`
+- **Authentication**: Fully integrated with Clerk
+- **File Uploads**: Handled via Cloudinary with size validation
+- **Dark Theme**: Consistent across all pages
+- **TypeScript**: Strict type checking enabled
+
+## 📱 Pages & Features
+
+### **🏠 Landing Page** (`/`)
+- Hero section with animated background
+- Feature showcase with interactive cards
+- User testimonials and statistics
+- How-it-works section
+- Call-to-action with trust indicators
+
+### **🔐 Authentication** (`/sign-in`, `/sign-up`)
+- Clerk-powered authentication
+- Social login support
+- Glassmorphism design
+- Mobile-responsive layouts
+
+### **🎬 Video Gallery** (`/home`)
+- Grid layout of uploaded videos
+- Video preview on hover
+- File size comparisons
+- Download functionality
+- Responsive card layout
+
+### **📤 Video Upload** (`/video-upload`)
+- Drag-and-drop file upload
+- Real-time progress tracking
+- File size validation
+- Success/error states
+- Automatic compression
+
+### **📸 Social Image Creator** (`/social-share`)
+- Multi-format support (Instagram, Twitter, Facebook)
+- Smart cropping and resizing
+- Real-time preview
+- One-click download
+- Format-specific optimization
+
+## 🔒 Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `DATABASE_URL` | PostgreSQL connection string | ✅ |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Clerk public key | ✅ |
+| `CLERK_SECRET_KEY` | Clerk secret key | ✅ |
+| `CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name | ✅ |
+| `CLOUDINARY_API_KEY` | Cloudinary API key | ✅ |
+| `CLOUDINARY_API_SECRET` | Cloudinary API secret | ✅ |
+| `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME` | Public Cloudinary name | ✅ |
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Cloudinary** for powerful media management
+- **Clerk** for seamless authentication
+- **Vercel** for hosting and deployment
+- **Prisma** for database management
+- **Tailwind CSS** for the beautiful UI
+
+## 📞 Support
+
+For support and questions:
+- 📧 Email: support@pixsence.com
+- 🐛 Issues: [GitHub Issues](https://github.com/shrivarshapoojari/Pixence/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/shrivarshapoojari/Pixence/discussions)
+
+---
+
+**Made with ❤️ by [Shrivarshapoojari](https://github.com/shrivarshapoojari)**
+
+> ✨ Transform your visual content today with PixSence!

@@ -86,7 +86,7 @@ export default function Page() {
             </div>
           </div>
 
-          <TrustIndicators />
+          {/* <TrustIndicators /> */}
         </div>
       </div>
 

@@ -132,7 +132,7 @@ export default function Page() {
 
               {/* Trust Indicators */}
               <div className="mt-6 text-center">
-                <div className="flex justify-center items-center space-x-4 text-xs text-gray-700 font-medium">
+                {/* <div className="flex justify-center items-center space-x-4 text-xs text-gray-700 font-medium"> */}
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-green-500 rounded-full mr-1"></div>
                     256-bit SSL
