@@ -126,7 +126,7 @@ export default function Home() {
               <div className="text-gray-600 dark:text-gray-300">Faster Compression</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">5+</div>
               <div className="text-gray-600 dark:text-gray-300">Social Formats</div>
             </div>
             <div>
@@ -134,7 +134,7 @@ export default function Home() {
               <div className="text-gray-600 dark:text-gray-300">Uptime</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-orange-600 mb-2">1M+</div>
+              <div className="text-3xl font-bold text-orange-600 mb-2">1+</div>
               <div className="text-gray-600 dark:text-gray-300">Files Processed</div>
             </div>
           </div>

@@ -1,4 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PixSence 🎬✨
+
+**Transform Your Visual Content with AI-Powered Optimization**
+
+PixSence is a modern web application that revolutionizes how you manage, compress, and optimize videos and images for web and social media platforms. Built with cutting-edge technology and a beautiful dark theme interface.
+
+![PixSence Banner](https://via.placeholder.com/1200x400/1F2937/FFFFFF?text=PixSence+-+Transform+Your+Visual+Content)
+
+## 🌟 Features
+
+### 🎥 **Video Compression & Management**
+- **Smart Compression**: AI-powered video compression that maintains quality while reducing file size
+- **Web Optimization**: Automatically optimize videos for web delivery
+- **Gallery Management**: Organize and browse your compressed videos
+- **Progress Tracking**: Real-time upload and compression progress
+- **Size Comparison**: See before/after file size comparisons
+
+### 📱 **Social Media Image Creator**
+- **Multi-Platform Support**: Instagram, Twitter, Facebook, LinkedIn formats
+- **Auto-Cropping**: Smart cropping with AI-powered gravity detection
+- **Perfect Sizing**: Pre-configured dimensions for all major platforms
+- **Instant Preview**: Real-time preview of transformed images
+- **One-Click Download**: Download optimized images for any platform
+
+### ☁️ **Cloud Storage & Delivery**
+- **Cloudinary Integration**: Powered by Cloudinary's robust infrastructure
+- **Global CDN**: Fast content delivery worldwide
+- **Secure Storage**: Enterprise-grade security for your media files
+- **Instant Access**: Access your content from anywhere
+
+## 🚀 Tech Stack
+
+### **Frontend**
+- **Next.js 15.5.2** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **DaisyUI** - Beautiful component library
+- **Lucide React** - Modern icon library
+
+### **Backend & Database**
+- **Prisma ORM** - Type-safe database access
+- **PostgreSQL** - Robust relational database
+- **Next.js API Routes** - Serverless API endpoints
+
+### **Authentication & Storage**
+- **Clerk** - Complete authentication solution
+- **Cloudinary** - Media management and optimization
+- **Axios** - HTTP client for API calls
+
+### **Development Tools**
+- **ESLint** - Code linting (configurable)
+- **PostCSS** - CSS processing
+- **Turbopack** - Ultra-fast bundler
 
 ## Getting Started
 
